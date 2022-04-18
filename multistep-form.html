@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mutlistep-form.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+    <!-- <script src="mutlistep-form.js"></script> -->
+</head>
+<body>
+    <header>
+        <h1>REGISTRATION FORM</h1>
+    </header>
+    <!-- <div class="container">
+        <header>Registration Form</header>
+        <div class="progress-bar">
+            <div class="step">
+                <p>Name</p>
+                <div class="bullet">
+                    <span>1</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Contact</p>
+                <div class="bullet">
+                    <span>2</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Birth</p>
+                <div class="bullet">
+                    <span>3</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Debt</p>
+                <div class="bullet">
+                    <span>4</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Adress</p>
+                <div class="bullet">
+                    <span>5</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+            <div class="step">
+                <p>Submit</p>
+                <div class="bullet">
+                    <span>6</span>
+                </div>
+                <div class="check fas fa-check"></div>
+            </div>
+        </div> -->
+
+
+
+        <!-- ************************************************************ -->
+    <form class="form-data" action="#">
+        <h3 class="text-center"> BASIC</h3>
+
+    <div class="form-step form-step-active">
+
+        <div class="tab">
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="Firstname" oninput="this.className=''">
+        </div>
+        <div class="tab">
+            <label for="lname">Last Name</label>
+            <input type="text" placeholder="Lastname" oninput="this.className=''">
+        </div>
+        <div class="tab">
+            <label for="pass">Password</label>
+            <input type="password" placeholder="Password" oninput="this.className=''">
+        </div>
+        <div class="tab">
+            <label for="conpass">Confirm Password</label>
+            <input type="password" placeholder="Enter the password again"oninput="this.className=''">
+        </div>
+        <div class="tab">
+            <label for="email">Email Id</label>
+            <input type="email" placeholder="Email Id" oninput="this.className=''">
+        </div>
+        <div>
+            <a href="#" class="btn btn-next width-50 btn-auto">Next</a>    
+            <!-- <button type="button" id="nextBtn"class="buttontypes">Next</button> -->
+        </div>
+
+    </div>
+
+<!-- *********************************************** -->
+<h3 class="text-center">OTHERS</h3>
+<div class="form-step form-step-active">
+    <div class="tab">
+        <label for="dob" >Date of Birth</label>
+        <input type="date" placeholder="Date of Birth">
+    </div>
+    <div class="tab">
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <!-- <radio option="Male">MALE</select>
+            <radio option="Female">FEMALE</select> -->
+    </div>
+    <div class="tab">
+        <label for="address">Address</label><br>
+        <!-- <input type="textbox" placeholder="Enter address"> -->            
+        <textarea id="address" name="address" rows="3" cols="20"></textarea>
+    </div>
+    <div class="tab">
+        <label for="state">State</label>
+        <select name="state" id="state">
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Kerala">Kerala</option>            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Telungana">Telungana</option>
+            <option value="Delhi">Delhi</option>            <option value="West Bengal">West Bengal</option>
+            <option value="Kashmir">Kashmir</option>
+        </select>
+                
+    </div>
+    <div class="tab">
+        <label for="mobileno">Mobile Number</label>
+        <input type="text" placeholder="Mobile Number">
+    </div>
+    <div class="btns-group">
+        <!-- <button type="submit"class="buttontypes">Previous</button>
+        <button type="submit"class="buttontypes">Next</button> -->
+        <a href="#" class="btn btn-prev">Previous</a>
+        <a href="#" class="btn btn-next">Next</a>
+
+
+    </div>
+</div>
+<!-- *********************************************** -->
+<h3 class="text-center">WORK</h3>
+
+<div class="form-step form-step-active">
+
+    <div class="tab">
+        <label for="occupation">Occupation</label>
+        <input type="radio" name="occupation" id="student">Student
+        <input type="radio" name="occupation" id="prof">Working professional
+    </div>
+
+    <div class="tab">
+        <label for="Exp">Overall Years of Experience</label>
+        <input type="text"placeholder="Experience">
+    </div>
+
+    <div class="btns-group">
+        <!-- <button type="submit"class="buttontypes">Previous</button>
+        <button type="submit"class="buttontypes">Next</button> -->
+        <a href="#" class="btn btn-prev">Previous</a>
+        <a href="#" class="btn btn-next">Next</a>
+    </div>
+</div>
+<!-- ************************************************** -->
+<h3 class="text-center">  EDUCATION</h3>
+<div class="form-step form-step-active">
+
+    <div class="tab">
+        <label for="grad">Graduation</label>
+        <input type="checkbox" placeholder="Graduation">
+    </div>
+
+    <div class="tab">
+        <label for="year">Year of passing</label>
+        <input type="year" placeholder="year of passing">
+    </div>
+    <div class="btns-group">
+        <!-- <button type="submit"class="buttontypes">Previous</button>
+        <button type="submit"class="buttontypes">Next</button> -->
+        <a href="#" class="btn btn-prev">Previous</a>
+        <a href="#" class="btn btn-next">Next</a>
+    </div>
+
+</div>
+<!-- ************************************************ -->
+<h3 class="text-center"> TEAM</h3>
+<div class="form-step form-step-active">
+
+    <div class="tab">
+        <label for="dept">Department/Practice</label>
+        <!-- <input type="dropdown"> -->
+        <select name="dept" id="dept">
+            <option value="Information Technology">Information Technology</option>
+            <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+            <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
+            <option value="Instrumentation and  Control Engineering">Instrumentation and  Control Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+        </select>
+    </div>
+    <div class="tab">
+        <label for="terms">Terms & Conditions:</label><br>
+        <input type="checkbox" id="checkbox"> I hereby accept all the terms and conditions
+    </div>
+    <div class="btns-group">
+        <a href="#" class="btn btn-last">Previous</a>
+    </div>
+
+    <div class="btn-submit">
+        <input type="submit" value="Register"/>
+   </div>
+</div>
+</form>
+</body>
+</html>
