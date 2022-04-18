@@ -9,7 +9,9 @@
     box-sizing: border-box;
 }
 .text-center{
-    text-align: center;
+    /* margin-bottom: 5px;
+    text-align: center; */
+    margin-left: 200px;
 }
 body{
     margin: 0;
@@ -33,12 +35,12 @@ body{
 }
  input{
      /* place-items: center; */
-     width:100%;
+     width:50%;
      padding: 10px 10px;
      margin: 15px 0;
      box-sizing: border-box;
      display: block;
-     border:5px solid white;
+     border:1px solid skyblue;
      margin-bottom: 1.5px;
  }
  
@@ -56,7 +58,7 @@ body{
      align-items: center;
      text-align: center;
  } */
- .btn{
+ /* button{
      padding: 10px;
      display: block;
      text-decoration: none;
@@ -66,7 +68,7 @@ body{
      border-radius: 5px;
      cursor: pointer;
     /* width:550%; */
- }
+ 
  /* a{
      text-align: center;
      display: block ;
@@ -89,19 +91,20 @@ body{
  
  }
  .btns-group{
-     display: grid;
-      grid-template-columns: repeat(2,1fr); 
-     gap:15px;
-     width:40%;
-     margin-left:auto;
+     /* display: grid;
+     grid-template-columns: repeat(2,1fr); 
+     gap:5px;
+     width:20%;
+     margin-left:325px; */
+     text-align: center;
+     width: 100%;
+     margin: 25px auto;
     
  }
 .width-50{
-   width: 20%; 
+   width: 5%; 
 }
- .btn-auto{
-margin-left: auto;
- }
+ 
  .form-step{
      display: none;
  }
@@ -109,12 +112,72 @@ margin-left: auto;
      display: block;
  }
  .btn-submit{
-   width:50%;
+   width:50px;
    place-items: center;
    margin: auto;
+   border:5px solid teal;
+   color: teal;
+   height: auto;
   
  }
  .btn-submit:hover{
     box-shadow:0 0 0 2px #fff,0 0 0 3px var(--primary-color); 
 
  }
+#others{ 
+    left:750px;
+}
+#work{ 
+    left:750px;
+}
+#education{ 
+    left:750px;
+}
+#team{ 
+    left:750px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.container{
+    width: 560px;
+    height: 680px;
+    margin: 8% auto;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container form{
+    top: 50px;
+    left: 40px;
+    width: 280px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+    /* box-shadow:0 0 0 2px #fff,0 0 0 3px var(--primary-color);  */
+    /* padding: 5px;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer; */
+    form button{
+        background-color:#34ebd8;
+        border-radius: 30px;
+        outline: none;
+        width: 110px;
+        height: 35px;
+        cursor: pointer;
+    }
+
+ #checkbox{
+     width: 5%;
+ }   
